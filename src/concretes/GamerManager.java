@@ -4,6 +4,8 @@ import abstracts.IUserCheckService;
 import abstracts.base.UserManager;
 import entities.base.User;
 
+import java.sql.SQLOutput;
+
 public class GamerManager extends UserManager {
 
     private IUserCheckService _userCheckService;
@@ -14,12 +16,10 @@ public class GamerManager extends UserManager {
 
     @Override
     public void create(User user) {
-        try {
-            if (_userCheckService.checkIfRealPerson(user)) {
-                super.create(user);
-            }
-        } catch (Exception exception) {
-            System.out.println("The person could not be verified.");
+        if (_userCheckService.checkIfRealPerson(user)) {
+            super.create(user);
+        } else {
+            System.out.println("The person could not be verified. Enter your information correctly!");
         }
     }
 }

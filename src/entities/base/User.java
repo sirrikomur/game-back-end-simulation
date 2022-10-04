@@ -2,15 +2,24 @@ package entities.base;
 
 import abstracts.IEntity;
 
-import java.util.Date;
+import java.util.Calendar;
 
 public class User implements IEntity {
     private int _id;
     private String _identityNumber;
     private String _firstName;
     private String _lastName;
-    private Date _dateOfBirth;
+    private Calendar _dateOfBirth;
     private String _email;
+
+    /*public User(int id, String identityNumber, String firstName, String lastName, Calendar dateOfBirth, String email) {
+        _id = id;
+        _identityNumber = identityNumber;
+        _firstName = firstName;
+        _lastName = lastName;
+        _dateOfBirth = dateOfBirth;
+        _email = email;
+    }*/
 
     public int getId() {
         return _id;
@@ -24,7 +33,7 @@ public class User implements IEntity {
         return _identityNumber;
     }
 
-    public void set_identityNumber(String identityNumber) {
+    public void setIdentityNumber(String identityNumber) {
         _identityNumber = identityNumber;
     }
 
@@ -44,11 +53,11 @@ public class User implements IEntity {
         _lastName = lastName;
     }
 
-    public Date getDateOfBirth() {
+    public Calendar getDateOfBirth() {
         return _dateOfBirth;
     }
 
-    public void setDateOfBirth(Date dateOfBirth) {
+    public void setDateOfBirth(Calendar dateOfBirth) {
         _dateOfBirth = dateOfBirth;
     }
 
