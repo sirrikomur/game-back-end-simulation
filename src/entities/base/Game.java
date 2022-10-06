@@ -7,7 +7,8 @@ import java.util.List;
 public class Game implements IEntity {
     private int _id;
     private String _name;
-    private String _price;
+    private float _price;
+    private Campaign _campaign;
 
     public int getId() {
         return _id;
@@ -25,11 +26,19 @@ public class Game implements IEntity {
         _name = name;
     }
 
-    public String getPrice() {
+    public float getPrice() {
         return _price;
     }
 
-    public void setPrice(String price) {
+    public void setPrice(float price) {
         _price = price;
+    }
+
+    public Campaign getCampaign() {
+        return _campaign;
+    }
+
+    public void setCampaign(Campaign campaign) {
+        _campaign = campaign;
     }
 }
