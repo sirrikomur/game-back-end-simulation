@@ -1,6 +1,5 @@
 package abstracts.base;
 
-import abstracts.IUserService;
 import entities.base.User;
 
 public abstract class UserManager implements IUserService {

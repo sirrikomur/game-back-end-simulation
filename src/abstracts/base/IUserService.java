@@ -1,4 +1,4 @@
-package abstracts;
+package abstracts.base;
 
 import entities.base.User;
 

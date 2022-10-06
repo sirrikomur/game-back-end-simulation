@@ -1,9 +1,7 @@
 import abstracts.base.IMultipleGameCampaignService;
 import abstracts.base.ISingleGameCampaignService;
 import adapters.EGovernmentServiceAdapter;
-import concretes.GamerManager;
-import concretes.campaigns.BuyOneGetOneFreeCampaignManager;
-import concretes.campaigns.NationalVideoGamesDayCampaignManager;
+import concretes.users.GamerManager;
 import entities.base.*;
 import entities.users.Gamer;
 
@@ -134,7 +132,6 @@ public class Program {
         if (gamesWithMultipleGamesCampaign.size() == 1) {
             discountedTotalPrice = gamesWithMultipleGamesCampaign.get(0).getPrice();
         } else if (gamesWithMultipleGamesCampaign.size() > 1) {
-            System.out.println(gamesWithMultipleGamesCampaign.size());
             for (int i = 1; i < gamesWithMultipleGamesCampaign.size() + 1; i++) {
                 if (i % 2 == 0) {
                     discountedTotalPrice += _multipleGameCampaignService.discount(gamesWithMultipleGamesCampaign.get(i - 2), gamesWithMultipleGamesCampaign.get(i - 1));

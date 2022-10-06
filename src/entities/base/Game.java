@@ -1,8 +1,6 @@
 package entities.base;
 
-import abstracts.IEntity;
-
-import java.util.List;
+import abstracts.base.IEntity;
 
 public class Game implements IEntity {
     private int _id;

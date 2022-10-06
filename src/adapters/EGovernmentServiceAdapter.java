@@ -1,6 +1,6 @@
 package adapters;
 
-import abstracts.IUserCheckService;
+import abstracts.base.IUserCheckService;
 import entities.base.User;
 import external.service.egovernment.EGovernmentService;
 

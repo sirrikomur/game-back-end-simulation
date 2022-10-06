@@ -1,6 +1,6 @@
 package entities.base;
 
-import abstracts.IEntity;
+import abstracts.base.IEntity;
 
 public class Campaign implements IEntity {
     private int _id;

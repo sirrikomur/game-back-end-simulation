@@ -1,6 +1,6 @@
 package entities.base;
 
-import abstracts.IEntity;
+import abstracts.base.IEntity;
 
 import java.util.Calendar;
 

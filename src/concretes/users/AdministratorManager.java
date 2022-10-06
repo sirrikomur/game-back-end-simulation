@@ -1,4 +1,4 @@
-package concretes;
+package concretes.users;
 
 import abstracts.base.UserManager;
 

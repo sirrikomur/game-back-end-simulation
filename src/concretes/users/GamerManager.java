@@ -1,10 +1,8 @@
-package concretes;
+package concretes.users;
 
-import abstracts.IUserCheckService;
+import abstracts.base.IUserCheckService;
 import abstracts.base.UserManager;
 import entities.base.User;
-
-import java.sql.SQLOutput;
 
 public class GamerManager extends UserManager {
 
